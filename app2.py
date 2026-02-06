@@ -38,8 +38,6 @@ stocks = (
 selected_stocks = st.selectbox("Select dataset for prediction", stocks)
 
 
-n_years = st.slider("Period from 1 to 5 yrs:", 1, 5)
-period = n_years * 365
 
 @st.cache_data
 def load_data(ticker):
