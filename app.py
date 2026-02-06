@@ -17,8 +17,6 @@ stocks=("AAPL","RELIANCE.NS","BANKNIFTY1.BO","HDB","IBN","SBIN.NS","HINDUNILVR.N
 selected_stocks=st.selectbox("Seleect dataset fro prediction",stocks)
 
 
-n_years=st.slider(" Period from 1 to 5 years:",1 , 5)
-period=n_years * 365
 
 @st.cache_data  #usign this we donot need to download data that has been previously seen
 def load_data(ticker):
